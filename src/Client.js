@@ -1,7 +1,10 @@
 import Peer from 'peerjs'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useRecoilState } from 'recoil'
 import styled from 'styled-components'
+import Text from './components/Text'
+import { eyePositionAtom } from './state'
 
 const Container = styled.div`
   position: relative;
@@ -11,12 +14,13 @@ const Dot = styled.div`
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: orange;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 `
 
 function Client() {
   const { id } = useParams()
-  const [position, setPosition] = useState(null)
+  const [position, setPosition] = useRecoilState(eyePositionAtom)
 
   useEffect(() => {
     const peer = new Peer(null, {
@@ -38,6 +42,7 @@ function Client() {
   return (
     <Container>
       {position && <Dot style={{ left: position.x, top: position.y }} />}
+      <Text />
     </Container>
   )
 }

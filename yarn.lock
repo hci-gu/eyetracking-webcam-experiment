@@ -9237,6 +9237,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-censored@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-censored/-/react-censored-1.0.0.tgz#284977b8f330a520d8017246473f8117da7a4b85"
+  integrity sha512-X5uBVrsmjnY95gzZPfnj9CU0T3tn672RpyOfEVREVk122wAeu3Ac7fuxf/i/c7f5JRromB1R/IHi93o7yksyGA==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"

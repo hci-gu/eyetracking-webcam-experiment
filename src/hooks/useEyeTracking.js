@@ -8,7 +8,7 @@ const useEyeTracking = () => {
 
   useEffect(() => {
     const start = async () => {
-      webgazer.params.showVideoPreview = true
+      webgazer.params.showVideoPreview = false
       await webgazer
         .setRegression('ridge')
         .setGazeListener((pos) => {
