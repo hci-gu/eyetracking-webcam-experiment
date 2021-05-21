@@ -15,7 +15,7 @@ const Container = styled.div`
 `
 
 const START_BLUR = 10
-const DECREASE_AMOUNT = 0.025
+const DECREASE_AMOUNT = 0.1
 
 const Text = ({ shouldBlur = true }) => {
   const eyePosition = useRecoilValue(eyePositionAtom)

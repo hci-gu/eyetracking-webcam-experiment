@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-import { usePeerAndSendEyePosition } from '../hooks/usePeerAndSendEyePosition'
+import {
+  usePeerAndSendEyePosition,
+  usePeerAndSendMousePosition,
+} from '../hooks/usePeerAndSendEyePosition'
 import Text from './Text'
 
 const Container = styled.div`
