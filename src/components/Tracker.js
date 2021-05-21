@@ -25,7 +25,9 @@ const Tracker = () => {
             <a href={`/#/client/${peerId}`}>/client/{peerId}</a>
           </span>
         )}
-        {peerId && <span>connected to: {peerConnection.peer}</span>}
+        {peerId && peerConnection && (
+          <span>connected to: {peerConnection.peer}</span>
+        )}
       </InfoPanel>
       <Text shouldBlur={false} />
     </Container>
